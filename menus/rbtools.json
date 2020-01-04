@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle rbtools",
+        "command": "rbtools:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "rbtools",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "rbtools:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

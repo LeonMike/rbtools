@@ -1,0 +1,18 @@
+{
+  "name": "rbtools",
+  "main": "./lib/Controllers/rbtools",
+  "version": "0.0.0",
+  "description": "A compiled set of tools to help with development",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "rbtools:toggle"
+  },
+  "repository": "https://github.com/atom/rbtools",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
