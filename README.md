@@ -20,6 +20,11 @@ This package allows creating a custom toolbar with buttons to execute atom comma
 
 `Parameters` must be included into an array form where the index of the value will use a base-1 increment. `$0` is not supported, yet.
 
+## Example of configuration for package settings
+
+- `Current Menu`: `Basic Menu` (this corresponds to the example provided below)
+- `Menu Model`: `C:\globals\atom\rbtools\menuModel.json` location of the file containing the menu model containing the `Current Menu`
+
 ## Example
 
 ```
