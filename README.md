@@ -2,6 +2,17 @@
 
 This package allows creating a custom toolbar with buttons to execute atom commands or nodejs code.
 
+## Current support
+
+### Icon types
+
+- `atomIcon` uses Atom's icons in `Styleguide` (accessible using `Ctrl`+`Shift`+`g`)
+
+### Action types
+
+- `atomCommand` allows the use of commands introduced on Atom's command window (accessible using `Ctrl`+`Shift`+`p`)
+- `nodeCommand` allow to introduce a raw nodejs code to be executed. Currently, the `child_process` module is auto included before the value into `Action` parameter in the menu model JSON file
+
 ## Example
 
 ```
