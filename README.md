@@ -7,6 +7,7 @@ This package allows creating a custom toolbar with buttons to execute atom comma
 ### Icon types
 
 - `atomIcon` uses Atom's icons in `Styleguide` (accessible using `Ctrl`+`Shift`+`g`)
+- `url` downloads the icon image file from the URL provided. Notice that the icon will be downloaded every time the toolbar is loaded/reloaded
 
 ### Action types
 
@@ -69,6 +70,16 @@ This package allows creating a custom toolbar with buttons to execute atom comma
                 "Icon"      : "terminal",
                 "ActionType": "nodeCommand",
                 "Action"    : "child_process.execFile('cmd', ['/C', 'start', '/d', '$1', 'powershell.exe', '-WindowStyle', 'Maximized'])",
+                "Params"    : ["$currentFolder"]
+            },
+            {
+                "Name"      : "open Git Bash here",
+                "Type"      : "button",
+                "Tooltip"   : "open Git Bash here",
+                "IconType"  : "url",
+                "Icon"      : "https://cdn.iconscout.com/icon/free/png-512/git-14-599158.png",
+                "ActionType": "nodeCommand",
+                "Action"    : "child_process.execFile('C:\\Program Files\\Git\\git-bash.exe', ['--cd=$1'])",
                 "Params"    : ["$currentFolder"]
             }
         ]

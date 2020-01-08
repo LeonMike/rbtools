@@ -4,11 +4,33 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+@icon-size:  16px;
+
 rb-tools {
   vertical-align: text-bottom;
 }
 
+rb-tools-button > span {
+  display: block;
+  width: @icon-size;
+  height: @icon-size;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 rb-tools-button span::before {
-  margin-right: 0 !important;
-  margin-top: 5px !important;
+  margin-right: 0;
+  margin-left: 0 !important;
+  /* margin-top: 5px !important; */
+  width: @icon-size;
+  height: @icon-size;
+  font-size: @icon-size !important;
+  vertical-align: super;
+}
+
+rb-tools-button > img {
+  width: @icon-size;
+  height: @icon-size;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
