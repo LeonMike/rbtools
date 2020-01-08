@@ -54,4 +54,6 @@ This package allows creating a custom toolbar with buttons to execute atom comma
 
 ```
 
+## Preview
+
 ![simple screenshot](https://github.com/LeonMike/rbtools/blob/master/simple%20preview.png?raw=true)
