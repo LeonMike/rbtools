@@ -13,6 +13,13 @@ This package allows creating a custom toolbar with buttons to execute atom comma
 - `atomCommand` allows the use of commands introduced on Atom's command window (accessible using `Ctrl`+`Shift`+`p`)
 - `nodeCommand` allow to introduce a raw nodejs code to be executed. Currently, the `child_process` module is auto included before the value into `Action` parameter in the menu model JSON file
 
+### Parameters
+
+- `$currentFile` returns the filepath of the file in the currect active text editor
+- `$currentFolder` return the folder where the file in the current active text editor
+
+`Parameters` must be included into an array form where the index of the value will use a base-1 increment. `$0` is not supported, yet.
+
 ## Example
 
 ```
