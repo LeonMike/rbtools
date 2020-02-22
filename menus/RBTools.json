@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle rbtools",
-        "command": "rbtools:toggle"
+        "label": "Toggle RBTools",
+        "command": "RBTools:toggle"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "rbtools",
+          "label": "RBTools",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "rbtools:toggle"
+              "command": "RBTools:toggle"
             }
           ]
         }

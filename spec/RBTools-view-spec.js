@@ -1,8 +1,8 @@
 'use babel';
 
-import RbtoolsView from '../lib/Views/rbtools-view';
+import RBToolsView from '../lib/Views/RBTools-view';
 
-describe('RbtoolsView', () => {
+describe('RBToolsView', () => {
   it('has one valid test', () => {
     expect('life').toBe('easy');
   });

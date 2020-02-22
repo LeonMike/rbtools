@@ -1,14 +1,14 @@
 {
-  "name": "rbtools",
-  "main": "./lib/Controllers/rbtools",
+  "name": "RBTools",
+  "main": "./lib/Controllers/RBTools",
   "version": "0.0.0",
   "description": "A compiled set of tools to help with development",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "rbtools:toggle"
+    "atom-workspace": "RBTools:toggle"
   },
-  "repository": "https://github.com/atom/rbtools",
+  "repository": "https://github.com/atom/RBTools",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

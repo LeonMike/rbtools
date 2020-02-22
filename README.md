@@ -1,4 +1,4 @@
-# rbtools package
+# RBTools package
 
 This package allows creating a custom toolbar with buttons to execute atom commands or nodejs code.
 
@@ -24,7 +24,7 @@ This package allows creating a custom toolbar with buttons to execute atom comma
 ## Example of configuration for package settings
 
 - `Current Menu`: `Basic Menu` (this corresponds to the example provided below)
-- `Menu Model`: `C:\globals\atom\rbtools\menuModel.json` location of the file containing the menu model containing the `Current Menu`
+- `Menu Model`: `C:\globals\atom\RBTools\menuModel.json` location of the file containing the menu model containing the `Current Menu`
 
 ## Example
 
@@ -90,4 +90,4 @@ This package allows creating a custom toolbar with buttons to execute atom comma
 
 ## Preview
 
-![simple screenshot](https://github.com/LeonMike/rbtools/blob/master/simple%20preview.png?raw=true)
+![simple screenshot](https://github.com/LeonMike/RBTools/blob/master/simple%20preview.png?raw=true)
