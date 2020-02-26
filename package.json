@@ -3,8 +3,7 @@
   "main": "./lib/Controllers/RBTools",
   "version": "0.0.0",
   "description": "A compiled set of tools to help with development",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "RBTools:toggle"
   },
@@ -13,6 +12,12 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "consumedServices": {
+    "tree-view": {
+      "versions": {
+        "^1.0.0": "consumeTreeView"
+      }
+    }
   }
 }
