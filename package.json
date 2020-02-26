@@ -1,5 +1,5 @@
 {
-  "name": "@leonmike/rbtools",
+  "name": "rbtools",
   "main": "./lib/Controllers/RBTools",
   "version": "1.0.0",
   "description": "A compiled set of tools to help with development",
