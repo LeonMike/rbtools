@@ -1,13 +1,16 @@
 {
-  "name": "RBTools",
+  "name": "@leonmike/rbtools",
   "main": "./lib/Controllers/RBTools",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A compiled set of tools to help with development",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "RBTools:toggle"
   },
-  "repository": "https://github.com/atom/RBTools",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonMike/rbtools.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -19,5 +22,19 @@
         "^1.0.0": "consumeTreeView"
       }
     }
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/LeonMike/rbtools/issues"
+  },
+  "homepage": "https://github.com/LeonMike/rbtools#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ronny Barrera"
 }
