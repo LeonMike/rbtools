@@ -4,6 +4,10 @@
       {
         "label": "Toggle RBTools",
         "command": "RBTools:toggle"
+      },
+      {
+        "label": "Reload RBTools configuration file",
+        "command": "RBTools:reload"
       }
     ]
   },
@@ -16,6 +20,10 @@
           "submenu": [
             {
               "label": "Toggle",
+              "command": "RBTools:toggle"
+            },
+            {
+              "label": "Reload RBTools configuration file",
               "command": "RBTools:toggle"
             }
           ]

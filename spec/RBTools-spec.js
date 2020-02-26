@@ -16,10 +16,10 @@ describe('RBTools', () => {
   });
 
   describe('when the RBTools:toggle event is triggered', () => {
-    it('hides and shows the modal panel', () => {
+    it('hides and shows the top bar', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.RBTools')).not.toExist();
+      expect(workspaceElement.querySelector('rb-tools')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
@@ -30,9 +30,9 @@ describe('RBTools', () => {
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.RBTools')).toExist();
+        expect(workspaceElement.querySelector('rb-tools')).toExist();
 
-        let RBToolsElement = workspaceElement.querySelector('.RBTools');
+        let RBToolsElement = workspaceElement.querySelector('rb-tools');
         expect(RBToolsElement).toExist();
 
         let RBToolsPanel = atom.workspace.panelForItem(RBToolsElement);
@@ -42,32 +42,5 @@ describe('RBTools', () => {
       });
     });
 
-    it('hides and shows the view', () => {
-      // This test shows you an integration test testing at the view level.
-
-      // Attaching the workspaceElement to the DOM is required to allow the
-      // `toBeVisible()` matchers to work. Anything testing visibility or focus
-      // requires that the workspaceElement is on the DOM. Tests that attach the
-      // workspaceElement to the DOM are generally slower than those off DOM.
-      jasmine.attachToDOM(workspaceElement);
-
-      expect(workspaceElement.querySelector('.RBTools')).not.toExist();
-
-      // This is an activation event, triggering it causes the package to be
-      // activated.
-      atom.commands.dispatch(workspaceElement, 'RBTools:toggle');
-
-      waitsForPromise(() => {
-        return activationPromise;
-      });
-
-      runs(() => {
-        // Now we can test for view visibility
-        let RBToolsElement = workspaceElement.querySelector('.RBTools');
-        expect(RBToolsElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'RBTools:toggle');
-        expect(RBToolsElement).not.toBeVisible();
-      });
-    });
   });
 });
