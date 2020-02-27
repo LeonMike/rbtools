@@ -1,7 +1,7 @@
 {
   "name": "rbtools",
   "main": "./lib/Controllers/RBTools",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "a custom toolbar helper",
   "keywords": [],
   "activationCommands": {
